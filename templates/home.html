@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<!---
+Jumbotron
+-->
+<div class='container-fluid bg-dark text-white py-2 pt-2'>
+    <div class='row justify-contents-between align-contents-center text-center'>
+        <h1 class='display-4'>Take your bussiness forward....</h1>
+        <p>Are you ready to begin?</p>
+        <a class='btn btn-info lg' href='#'>START A PROJECT</a>
+    </div>
+</div>
+
+<div class='container'>
+    <div class='row jumbotron align-items-center'>
+        <div class='col-md-5 '>
+        <div class='contact'>
+            <h3 class='display-4'>Contact Form</h3>
+                <form method='POST' action='.'>
+                    
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <br>
+                    <button class='btn btn-success btn-lg' value='submit' name='submit' type='submit'>Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,53 @@
+
+body {
+    background-color: #fff;
+    
+}
+
+a {
+    text-decoration: none;
+    color: cornsilk;
+}
+a:hover {
+    color: lemonchiffon;
+}
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.btn {
+    border-radius: 0%;
+}
+
+.navbar .nav-link {
+    font-weight: bolder;
+    color: #fff;
+    margin: 8px;
+    font-size: large;
+}
+.nav-link:hover {
+    font-weight: bolder;
+    color: bisque;
+    margin: 8px;
+    font-size: large;
+}
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+.main {
+    width: 100%;
+    height: 80vh;
+    background: url('/static/img/bg-masthead.jpg');
+    background-size: cover;
+    position: relative;
+    
+}
+.content h1 {
+    font-weight: bold;
+}
+
+.count-down {
+    background-color: dimgray;
+    padding: 10px 10px 10px 10px;
+}

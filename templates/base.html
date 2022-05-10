@@ -1,0 +1,60 @@
+{% load static %}
+
+{% include 'scripts.html' %}
+{% include 'header.html' %}
+
+<section class='main d-flex align-items-center'>
+    <div class='container justify-content-center text-center position-relative'>
+        <h1 class='display-2'>You can take your business online now</h1>
+        <h2>Quickly design and customize responsive mobile-first sites with Bootstrap, the worlds most popular front-end open source toolkit!</h2>
+        
+        <a class='btn btn-primary btn-lg' href='#'>Start A Project</a>
+    </div>
+</section>
+
+<section class='content d-flex text-dark bg-light'>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-6'>
+                <h1 class='display-4 py-2'>Build responsive website for your bussiness and companies</h1>
+              
+            </div>
+            <div class='col-6 py-2'>
+                <img class='img-fluid' src='{% static 'img/bg-showcase.jpg' %}'
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class='count-down d-flex align-items-center'>
+    <div class='container'>
+        <div class='row justify-contents-center align-contents-center text-white text-center'>
+            <div class='col-md-3'>
+                <h1>350</h1>
+                <p class='pt-1'>Comfortable Services</p>
+            </div>
+
+            <div class='col-md-3'>
+                <h1>220</h1>
+                <p class='pt-2'>Reliable Performance
+            </div>
+            
+            <div class='col-md-3'>
+                <h1>429</h1>
+                <p class='pt-3'>Natural Language Processing</p>
+            </div>
+            <div class='col-md-3'>
+                <h1>429</h1>
+                <p class='pt-3'>Natural Language Processing</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% block content %}
+
+
+{% endblock  %}
+{% include 'footer.html' %}
+
+
